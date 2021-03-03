@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+:root {
+  --color-primay:#eb2f64;
+  --color-primay-light:#ff3366;
+  --color-primay-dark:#ba2650;
+  --color-gray-light-1: #f9f9f9;
+  --color-gray-light-2: #f4f2f2;
+  --color-gray-light-3: #f0eeee;
+  --color-gray-dark-1: #333;
+  --color-gray-dark-2: #777;
+  --color-gray-dark-3: #999;
+  --color-white: #fff;
+  --shodow-dark:  0 2rem 6rem rgba( 0,0,0, .3); }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open-sans','sans-serif';
+  font-weight: 400;
+  line-height: 2;
+  background-image: linear-gradient(to right bottom, var(--color-primay-light), var(--color-primay-dark));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-gray-light-2);
+  box-shadow: var(--shodow-dark);
+  min-height: 50rem; }
+
+.header {
+  height: 7rem;
+  background-color: var(--color-white);
+  border-bottom: var(--color-gray-light-2); }
+
+.content {
+  display: flex; }
+
+.sidebar {
+  background-color: var(--color-gray-dark-1);
+  flex: 0 0 18%; }
+
+.hotel-view {
+  background-color: orangered;
+  flex: 1; }
+
+.logo {
+  height: 3.25rem; }
+
+.search___icon {
+  height: 2rem;
+  width: 2rem; }
+
+.user-nav___icon {
+  height: 2.25rem;
+  width: 2.25rem; }
+
+.user-nav___user-photo {
+  height: 3.75rem;
+  border-radius: 50%; }
