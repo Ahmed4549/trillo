@@ -262,3 +262,130 @@ justify-content: center;
         box-shadow: none;
     }
 }
+
+.paragraph:not(:last-of-type){
+    margin-bottom: 2rem;
+}
+.list{
+    margin: 3rem 0;
+    list-style: none;
+    padding: 3rem;
+    border-bottom:1px solid var(--color-gray-dark-3) ;
+    border-top:1px solid var(--color-gray-dark-3) ;
+    display: flex;
+    flex-wrap: wrap;
+
+    &___item{
+        flex: 0 0 50%;
+        margin-bottom: .7rem;
+
+    }
+    &___item::before{
+        content: "";
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
+        margin-right: 1rem;
+        // background-image: url(../imgs/SVG/chevron-thin-right.svg);
+        // background-size: cover;
+        background-color: var(--color-primay);
+        -webkit-mask-image:url(../imgs/SVG/chevron-thin-right.svg) ;
+        -webkit-mask-size:cover;
+
+    }
+}
+.recommend{
+    font-size: 1.3rem;
+    color: var(--color-gray-dark-3);
+    display: flex;
+    align-items: center;
+    &___count{
+        margin-right: auto;
+    }
+    &___friends{
+
+    }
+    &___photo{
+        box-sizing: content-box;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: 3px solid white;
+
+        &:not(:last-child){
+            margin-right: -2rem;
+        }
+    }
+}
+
+.review{
+    background: #fff;
+    box-shadow: 0 2rem 3rem rgba(0,0 ,0, .05);
+    padding: 3rem;
+    position: relative;
+    
+    
+    &:not(:last-child){
+        margin-bottom: 3.5rem;
+        
+    }
+    
+
+    &___text{
+        margin-bottom: 0.5rem;
+        position: relative;
+        z-index: 10;
+        font-family: sans-serif ;
+     }
+     &___user{
+        display: flex;
+        align-items: center;
+       
+     }
+     &___photo{
+         height: 5.5rem;
+         width: 5.5rem;
+         border-radius: 50%;
+         margin-right:auto;
+     }
+     &___user-box{
+        padding: 10px;
+     }
+     &___username{
+         font-size: 1.7rem; 
+        text-transform: uppercase;
+        font-weight: 300;
+     }
+     &___userdate{
+        color: var(--color-gray-dark-3);
+     }
+     &___rating{
+         color: white;
+         font-size: 2rem;
+         padding: 1rem;
+        background-color: var(--color-primay);
+     }
+     &::before{
+         content: "\0022";
+         position: absolute;
+         line-height: 1;
+         top: -2rem;
+         right: 24rem;
+         font-size: 20rem;
+         color: var(--color-gray-light-3);
+        z-index:1; 
+     }
+}
+.cta{
+    padding: 3.5rem;
+    text-align: center;
+    &___book--now{
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 2.5rem;
+    }
+}
+.btn{
+    outline: none;
+    background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+}
