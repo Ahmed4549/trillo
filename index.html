@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trillo &ndash; Your All-in-One Booking App</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    </link>
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="./imgs/logo.png" alt="logo here" class="logo">
+            <form action="#" class="search">
+                <input type="text" class="search___input" placeholder="Search Hotels">
+                <button class="search___button">
+                    <svg class="search___icon">
+                        <use xlink:href="imgS/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+            <nav class="user-nav">
+                <div class="user-nav___icon-box">
+                    <svg class="user-nav___icon">
+                        <use xlink:href="imgS/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="user-nav___notification">17</span>
+                </div>
+                <div class="user-nav___icon-box">
+                    <svg class="user-nav___icon">
+                        <use xlink:href="imgS/sprite.svg#icon-chat"></use>
+                    </svg>
+                    <span class="user-nav___notification">7</span>
+                </div>
+                <div class="user-nav___user">
+                    <img src="./imgs/user-1.jpg" alt="user picture" class="user-nav___user-photo">
+                    <span class="user-nav___user-name">John Doe</span>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav___item side-nav___item--active">
+                        <a href="#" class="side-nav___link">
+                            <svg class="side-nav___icon">
+                                <use xlink:href="imgS/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span>Hotel</span>
+                        </a>
+                    </li>
+                    <li class="side-nav___item">
+                        <a href="#" class="side-nav___link">
+                            <svg class="side-nav___icon">
+                                <use xlink:href="imgS/sprite.svg#icon-aircraft"></use>
+                            </svg>
+                            <span>Flight</span>
+                        </a>
+                    </li>
+                    <li class="side-nav___item">
+                        <a href="#" class="side-nav___link">
+                            <svg class="side-nav___icon">
+                                <use xlink:href="imgS/sprite.svg#icon-key"></use>
+                            </svg>
+                            <span>Car Rental</span>
+                        </a>
+                    </li>
+                    <li class="side-nav___item">
+                        <a href="#" class="side-nav___link">
+                            <svg class="side-nav___icon">
+                                <use xlink:href="imgS/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>Tour</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    &copy; 2021 &ndash; by Ahmed . All Rights Reserved.
+                </div>
+            </nav>
+            <main class="hotel-view">
+                <div class="gallery">
+                    <figure class="gallery___item">
+                        <img src="./imgs/hotel-1.jpg" alt="" class="gallery___photo">
+                    </figure>
+                    <figure class="gallery___item">
+                        <img src="./imgs/hotel-2.jpg" alt="" class="gallery___photo">
+                    </figure>
+                    <figure class="gallery___item">
+                        <img src="./imgs/hotel-3.jpg" alt="" class="gallery___photo">
+                    </figure>
+                </div>
+                <div class="overview">
+                    <h1 class="overview___heading">Hotel Las Pamous</h1>
+                    <div class="overview___stars">
+                        <svg class="overview___icon--star">
+                            <use xlink:href="imgS/sprite.svg#icon-star"></use>
+                        </svg> 
+                        <svg class="overview___icon--star">
+                            <use xlink:href="imgS/sprite.svg#icon-star"></use>
+                        </svg> 
+                        <svg class="overview___icon--star">
+                            <use xlink:href="imgS/sprite.svg#icon-star"></use>
+                        </svg> 
+                        <svg class="overview___icon--star">
+                            <use xlink:href="imgS/sprite.svg#icon-star"></use>
+                        </svg> 
+                        <svg class="overview___icon--star">
+                            <use xlink:href="imgS/sprite.svg#icon-star"></use>
+                        </svg>  
+                    </div>
+                
+                <div class="overview___location">
+                    <svg class="overview___icon--map">
+                        <use xlink:href="imgS/sprite.svg#icon-location-pin"></use>
+                    </svg>
+                    <button class="button--inline">
+                        Sydney, Australia
+                    </button>
+                </div>
+                <div class="overview___rating">
+                    <div class="overview___rating--average">8.7</div>
+                    <div class="overview___rating--count">429 votes</div>
+                </div>
+            </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
