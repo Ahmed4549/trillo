@@ -4,11 +4,16 @@
     background-color: var(--color-gray-light-2);
     box-shadow: var(--shodow-dark);
     min-height: 50rem;
+    font-size: 1.6rem;
 }
 .header{
     height: 7rem;
     background-color: var(--color-white);
     border-bottom: var(--color-gray-light-2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .content{
     display: flex;
