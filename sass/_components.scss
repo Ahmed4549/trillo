@@ -8,6 +8,12 @@
     display: flex;
     align-items: center;
 justify-content: center;
+
+@media only screen and (max-width: $bp-xsmall) {
+        order: 2;
+        flex-basis: 100%;
+}
+
     &___input{
         font-family: inherit;
         font-size: inherit;
@@ -112,15 +118,26 @@ justify-content: center;
     font-size: 1.5rem;
     list-style: none;
     margin-top: 3.5rem;
-    
     transition: .6 ease;
+    
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        margin: 0;  
+    }
     &___item{
         position: relative;
         &:not(:last-child){
             margin-bottom: .5rem;
+            @media only screen and (max-width: $bp-medium) {
+                margin-bottom: 0;
+            }
+        }
+        @media only screen and (max-width: $bp-medium) {
+            flex: 1;
         }
         &:active::before{
             background-color: var(--color-primay-light);
+            
         }
         &::before{
             content: "";
@@ -148,6 +165,15 @@ justify-content: center;
         z-index: 1000;
         position: relative;
         
+        @media only screen and (max-width: $bp-medium) {
+        justify-content: center;
+        padding: 2rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            padding: 1.5rem .5rem;
+        }
+            
 
     }
     &___icon{
@@ -155,6 +181,10 @@ justify-content: center;
         height: 1.75rem;
         margin-right: 2.5rem;
         fill: currentColor ;
+        @media only screen and (max-width: $bp-small) {
+            margin: 0;
+        }
+            
     }
 }
 
@@ -163,6 +193,10 @@ justify-content: center;
     color: var(--color-gray-dark-3);
     text-align: center;
     padding: 2.5rem;
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+        margin: 0;   
+    }
 }
 .gallery{
     display: flex;
@@ -183,6 +217,11 @@ justify-content: center;
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.5rem;
+            padding: 1.25rem 2rem;
+        }
     }
     &___stars{
         margin-right: auto;
@@ -217,12 +256,23 @@ justify-content: center;
         &--average{
             font-size: 2.25rem;
             font-weight: 300;
+            @media only screen and (max-width: $bp-small) {
+                font-size: 1.8rem;
+            }
         }
         &--count{
              font-size: 1rem;
              text-transform: uppercase;
+             @media only screen and (max-width: $bp-small) {
+                font-size: .8rem;
+            }
+        }
+        @media only screen and (max-width: $bp-small) {
+           
+            padding: 0 1.5rem;
         }
     }
+
     
 
 }
@@ -303,7 +353,7 @@ justify-content: center;
         margin-right: auto;
     }
     &___friends{
-
+        display: flex;
     }
     &___photo{
         box-sizing: content-box;
@@ -323,6 +373,10 @@ justify-content: center;
     box-shadow: 0 2rem 3rem rgba(0,0 ,0, .05);
     padding: 3rem;
     position: relative;
+    overflow: hidden;
+    @media only screen and (max-width: $bp-medium) {
+     padding: 2rem;
+    }
     
     
     &:not(:last-child){
@@ -383,6 +437,9 @@ justify-content: center;
         text-transform: uppercase;
         font-weight: 300;
         margin-bottom: 2.5rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+    padding: 2.5rem;
     }
 }
 .btn{
